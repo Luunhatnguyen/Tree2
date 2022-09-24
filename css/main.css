@@ -667,8 +667,8 @@ nav ul > li > a {
         background-repeat: no-repeat;
         background-position: bottom;
     }
-    .right-footer {
-        padding-left: 10%;
+    .right-footer{
+        padding-left: 10% !important;
     }
     .logo-footer {
         width: 90%;
