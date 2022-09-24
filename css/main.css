@@ -460,11 +460,13 @@ nav ul > li > a {
 .ul__header_mobile  li >a  {
     color: black;
     text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+
 }
 .ul__header_mobile  li {
     border: 1px solid;
     background-color: gainsboro;
-    padding: 10px 20px;
 }
 .nav__mobile__close > i {
     font-size: 18px;
@@ -481,6 +483,10 @@ nav ul > li > a {
         height: 35%;
     }
     .nav__bar_btn {
+        position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 10000000;
         display: block !important;
         margin-left: auto;
         color: white;
