@@ -436,7 +436,7 @@ nav ul > li > a {
 
 /* HEADER */
 .nav__bar_btn {
-    display: none;
+    display: none !important;
 }
 .nav__bar_mobile {
     position: fixed;
@@ -458,7 +458,13 @@ nav ul > li > a {
 
 }
 .ul__header_mobile  li >a  {
-    color: whitesmoke;
+    color: black;
+    text-decoration: none;
+}
+.ul__header_mobile  li {
+    border: 1px solid;
+    background-color: gainsboro;
+    padding: 10px 20px;
 }
 .nav__mobile__close > i {
     font-size: 18px;
@@ -475,9 +481,15 @@ nav ul > li > a {
         height: 35%;
     }
     .nav__bar_btn {
-        display: block;
+        display: block !important;
         margin-left: auto;
         color: white;
+        height: 0%;
+        border: none !important;
+        background: none !important;
+    }
+    #offcanvasRightLabel > img {
+        width: 40%;
     }
     .nav__bar_screen {
         display: none;
@@ -639,7 +651,7 @@ nav ul > li > a {
         left: 3%;
         font-size: 12px;
         color: black;
-        padding: 0;
+        padding: 0px 4px;
         text-align: justify;
     }
     .content_banner_p > p {

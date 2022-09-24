@@ -40,21 +40,42 @@
                 </ul>
             </nav>
 
-            <label for="nav-moblie-input" class="nav__bar_btn">
+            <!-- <label for="nav-moblie-input" class="nav__bar_btn">
                 <i class="fa-solid fa-bars"></i>
-            </label>
+            </label> -->
+            <button class="fa-solid fa-bars nav__bar_btn " type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></button>
 
-            <input type="checkbox" name="" hidden class="nav__input" id="nav-moblie-input">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel"><img src="img/Logo/Logo1.png" alt="HEADER"></h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body ">
+                    <ul class="ul__header_mobile">
+                        <li><a href="#Vechungtoi" data-bs-dismiss="offcanvas" aria-label="Close">Về chúng tôi</a></li>
+                        <li><a href="#Sanpham" data-bs-dismiss="offcanvas" aria-label="Close">Sản phẩm - Dịch vụ</a>
+                        </li>
+                        <li><a href="#Quytrinh" data-bs-dismiss="offcanvas" aria-label="Close">Quy trình xây dựng</a>
+                        </li>
+                        <li><a href="#Tieubieu" data-bs-dismiss="offcanvas" aria-label="Close">Dự án tiêu biểu</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <input type="checkbox" name="" hidden class="nav__input" id="nav-moblie-input">
 
             <nav class="nav__bar_mobile">
                 <label for="nav-moblie-input" class="nav__mobile__close"><i class="fa-solid fa-xmark"></i></label>
                 <ul class="ul__header_mobile">
-                    <li><a href="#">Về chúng tôi</a></li>
-                    <li><a href="#">Sản phẩm - Dịch vụ</a></li>
-                    <li><a href="#">Quy trình xây dựng</a></li>
-                    <li><a href="#">Dự án tiêu biểu</a></li>
+                    <li><a href="#Vechungtoi">Về chúng tôi</a></li>
+                    <li><a href="#Sanpham">Sản phẩm - Dịch vụ</a></li>
+                    <li><a href="#Quytrinh">Quy trình xây dựng</a></li>
+                    <li><a href="#Tieubieu">Dự án tiêu biểu</a></li>
                 </ul>
-            </nav>
+            </nav> -->
         </header>
     </div>
 
@@ -80,8 +101,8 @@
                 <!-- <h3>Tư vấn ngay</h3> -->
             </div>
             <div class="right__tree">
-                <img src="img/tree/khachhangdenvoichungtoi.png" alt="">
-                <h3>Kinh nghiệm hoạt động</h3>
+                <img src="img/Logo/kinhnghiemhoatdong.png" alt="">
+                <!-- <h3>Kinh nghiệm hoạt động</h3> -->
                 <div class="dropdown-content">
                     <p>
                         Với bề dày kinh nghiệm trên 10 năm hoạt động trong lĩnh vực cảnh quan. NP Landscape tự tin đưa
@@ -93,8 +114,8 @@
                 </div>
             </div>
             <div class="left__tree">
-                <img src="img/tree/khachhangdenvoichungtoi.png" alt="">
-                <h3>Chuyên gia cảnh quan</h3>
+                <img src="img/Logo/chuyengiacanhquan.png" alt="">
+                <!-- <h3>Chuyên gia cảnh quan</h3> -->
                 <div class="dropdown-content">
                     <p>
                         Đội ngũ nhân viên, kiến trúc sư, kỹ sư được tuyển chọn một cách cẩn thận, có trình độ, tay nghề
@@ -105,8 +126,8 @@
 
             </div>
             <div class="below_right_tree">
-                <img src="img/tree/khachhangdenvoichungtoi.png" alt="">
-                <h3>Khách hàng đến NP Landscape</h3>
+                <img src="img/Logo/khachhangden.png" alt="">
+                <!-- <h3>Khách hàng đến NP Landscape</h3> -->
                 <div class="dropdown-content">
                     <p>
                         NP Landscape mong muốn dành những lợi ích và ưu đãi tốt nhất cho khách hàng khi trải nghiệm
@@ -121,8 +142,8 @@
                 </div>
             </div>
             <div class="below_left_tree">
-                <img src="img/tree/doivoikhachhang.png" alt="">
-                <h3>NP Landscape với khách hàng</h3>
+                <img src="img/Logo/voikhachhang.png" alt="">
+                <!-- <h3>NP Landscape với khách hàng</h3> -->
                 <div class="dropdown-content">
                     <p>
                         Chúng tôi luôn dành tất cả tâm huyết cho từng dự án mình làm cùng với kinh nghiệm và kỹ năng
@@ -459,6 +480,9 @@
 
 
     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
